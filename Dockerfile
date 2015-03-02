@@ -10,7 +10,7 @@ RUN chmod +x /usr/local/bin/lfetool
 
 RUN lfetool -x
 
-#have to work around the lfe install issue
+#have to work around an unknown lfe install issue
 RUN lfetool install lfe || true
 RUN lfetool install lfe || true
 
