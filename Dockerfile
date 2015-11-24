@@ -8,4 +8,6 @@ RUN curl -L -o ./lfetool https://raw.github.com/lfe/lfetool/stable/lfetool \
   && rm -rf /root/lfetool \
   && lfetool -x
 
+RUN apt-get update -y && apt-get install -y libpam0g-dev && apt-get clean -y
+
 CMD lfe
